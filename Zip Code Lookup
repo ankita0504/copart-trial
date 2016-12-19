@@ -1,0 +1,8 @@
+var prompt = require('prompt');
+var zipcodes = require('zipcodes');
+
+prompt.start();
+console.log('Enter your')
+prompt.get(['zipcodes'], function (err, result) { console.log(zipcodes.lookup(result.zipcodes))});
+
+
